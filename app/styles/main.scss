@@ -1,0 +1,88 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@import "Blog/myBlog";
+
+body{
+        background-color: #e0e0e0;
+}
+
+ul#menu li{
+    display:inline;
+}
+
+ul#menu li a{
+    background-color:green;
+    text-decoration:none;
+    text-align:center;
+    color:wheat;
+    padding:10px 10px 10px 10px;
+}
+
+ul#menu li a:hover{
+    background-color:red;
+    color:black;
+}
+
+#header{
+    /*height: 78px;*/
+  border-radius: 10px;
+  /*background: url(../Images/background.jpg) no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-left:0px;
+  margin-right:0px;
+}
+
+header img{
+float: left;
+    height: 58px;
+    /* border-radius: 50px; */
+    border-top-left-radius: 87px;
+    /* border-top-right-radius: 137px; */
+    border-bottom-right-radius: 89px;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+
+header h3{
+    color:#151515;
+    margin-bottom:3px;
+}
+
+.headerNav{
+    margin-top:12px;
+    background-color:none;
+    border-color:none;
+}
+
+.headerNav ul{
+        font-size: 14px;
+            margin-right: -30px;
+}
+
+.headerNav nav ul li a{
+    color:white;
+}
+
+#main-navigation{
+        background-color: #e0e0e0;
+    border-color: #e0e0e0;
+}
+
+#headerText{
+position: absolute;
+top: 18px;
+font-family: cursive;
+font-size: x-large;
+}
+
+#tagLine{
+position: absolute;
+
+font-family: cursive;
+}
