@@ -12,7 +12,10 @@
     angular
       .module('nRayTechnologyApp', [
         'nRayTechnologyApp.config',
+        'nRayTechnologyApp.contactUs',
         'nRayTechnologyApp.tournament',
+        'nRayTechnologyApp.digiWatch',
+        'ui.bootstrap',
         'ngAnimate',
         'ngCookies',
         'ngResource',

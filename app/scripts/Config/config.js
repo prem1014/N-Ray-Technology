@@ -10,15 +10,15 @@
         $routeProvider
        .when('/SignUp', {
            templateUrl: 'User_Registration/_signUp.html',
-           controller: 'UserRegistrationCtrl'
+          // controller: 'UserRegistrationCtrl'
        })
       .when('/Login', {
           templateUrl: 'Login/_login.html',
-          controller: 'LoginCtrl'
+          //controller: 'LoginCtrl'
       })
       .when('/AboutUs', {
           templateUrl: 'views/AboutUs/_aboutUs.html',
-          controller: 'AboutUsCtrl'
+         // controller: 'AboutUsCtrl'
       })
       .when('/ContactUs', {
           templateUrl: 'views/ContactUs/_contactUs.html',

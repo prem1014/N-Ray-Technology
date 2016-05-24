@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0043)http://upsconline.nic.in/PartII_Submit.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Part-II Registration(2)</title>
+<script language="javascript" type="text/javascript" src="./Part-II Registration(2)_files/reg_valid.js"></script>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style>
+<script type="text/javascript">
+        window.history.forward(); function noBack() { window.history.forward(); }
+</script>
+<script language="javascript">
+var BM = 2; // button middle
+var BR = 3; // button right
+var msg ="For security reasons,Right Click is not allowed!";
+
+function mouseDown(e) 
+{ 
+  try { if (event.button==BM||event.button==BR) {return false;} }  
+  catch (e) { if (e.which == BR) {return false;} } 
+}
+document.oncontextmenu = function() { //alert(msg); 
+return false; }
+document.ondragstart   = function() { //alert(msg); 
+return false; }
+document.onmousedown   = mouseDown;
+
+var message="For security reasons,Right Click is not allowed!"; // Message for the alert box
+
+// Don't edit below!
+
+function click(e) {
+if (document.all) {
+if (event.button == 2) {
+//alert(message);
+return false;
+}
+}
+if (document.layers) {
+if (e.which == 3) {
+alert(message);
+return false;
+}
+}
+}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+}
+document.onmousedown=click;
+//////////F12,F5,ctrl+r disable code////////////////////////
+    document.onkeypress = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+           //alert('No F-12');
+            return false;
+        }else if(event.keyCode == 116){
+		    return false;
+		}
+		else if(event.keyCode == 8){
+		    return false;
+		}
+    }
+    document.onmousedown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            //alert('No F-keys');
+            return false;
+        }else if(event.keyCode == 116){
+		    return false;
+		}
+		else if(event.keyCode == 8){
+		    return false;
+		}
+    }
+document.onkeydown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            //alert('No F-keys');
+            return false;
+        }else if(event.keyCode == 116){
+		    return false;
+	}
+	else if(event.keyCode == 8){
+		    return false;
+	}
+    }
+
+/////////////////////end///////////////////////
+</script>
+</head>
+<body onload="return chkWindow()">
+<iframe src="./Part-II Registration(2)_files/upload1.html" name="upload" marginheight="0" marginwidth="0" height="780px" width="100%" frameborder="0">
+  &lt;p&gt;Your browser does not support.&lt;/p&gt;
+  &lt;p align="center"&gt;&lt;a href="" OnClick="window_close()"&gt;Close Window&lt;/a&gt;&lt;/p&gt;
+</iframe>
+
+</body></html>
