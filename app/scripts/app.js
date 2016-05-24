@@ -9,26 +9,26 @@
  * Main module of the application.
  */
 (function () {
-    angular
-      .module('nRayTechnologyApp', [
-        'nRayTechnologyApp.config',
-        'nRayTechnologyApp.contactUs',
-        'nRayTechnologyApp.tournament',
-        'nRayTechnologyApp.digiWatch',
-        'ui.bootstrap',
-        'ngAnimate',
-        'ngCookies',
-        'ngResource',
-        'ngSanitize',
-        'ngTouch'
-      ])
+  angular
+    .module('nRayTechnologyApp', [
+      'nRayTechnologyApp.config',
+      'nRayTechnologyApp.contactUs',
+      'nRayTechnologyApp.tournament',
+      'nRayTechnologyApp.digiWatch',
+      'ui.bootstrap',
+      'ngAnimate',
+      'ngCookies',
+      'ngResource',
+      'ngSanitize',
+      'ngTouch'
+    ])
     .controller('IndexCtrl', indexCtrl);
 
-    indexCtrl.$inject = ['$scope'];
+  indexCtrl.$inject = ['$scope'];
 
-    function indexCtrl($scope) {
-        $scope.carousal = true;
-    }
+  function indexCtrl($scope) {
+    $scope.carousal = true;
+  }
 
 })();
 

@@ -1,11 +1,12 @@
-(function(){
-	'use strict';
-	angular.module('nRayTechnologyApp',[])
-	.controller('MyBlogCtrl',myBlogCtrl);
+(function () {
+  'use strict';
+  angular.module('nRayTechnologyApp', [])
+    .controller('MyBlogCtrl', myBlogCtrl);
 
-     myBlogCtrl.$inject=['$scope'];
+  myBlogCtrl.$inject = ['$scope'];
 
-	function myBlogCtrl($scope){
+  function myBlogCtrl($scope) {
 
-	}
+  }
 })();
+

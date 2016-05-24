@@ -1,0 +1,80 @@
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4>Angular Js Custom Directive</h4>
+    </div>
+    <div class="panel-body">
+      <section>
+        I think directive is one of the best feature supported by Angular Js.
+        I have found directive the most complex part in Angular Js and that's why I decided
+        to write this blog.<br>
+        Angular supports two types of directives:-
+        <ol style="font-weight: bold;">
+          <li>
+            Built in Directive by Angular Js framework
+          </li>
+          <li>
+            Custom Directive
+          </li>
+        </ol>
+        Angular Js provides several built in directive and some examples are:
+        <ol>
+          <li>ng-repeat</li>
+          <li>ng-options</li>
+          <li>ng-click</li>
+          <li>ng-init</li>
+          <li>ng-bind</li>
+        </ol>
+        and many more.<br>
+        But I am here to guide you how to create our own custom directive.<br>
+        I will start with the custom directive definition and it's usage.<br><br>
+        Angular Js custom directives are HTML markers on DOM element and used to extend the functionality of HTML.
+        They usually contains some html template and they get compiled by Angular js's html compiler.
+        You can use Angular js Custom directive to create some reusable component.
+        I am not going to tell any scenario right now but you will find it in the directive example and it's code.
+        <br><br>
+        <b>Creating custom directive</b><br>
+        I am writing the code below and then I will explain each line of code.
+        <pre style="padding: 0px;background-color: black;">
+          <p style="    color: #EC9806;left: 0px;top: 0px; font-size: medium;">
+             var myApp=angular.module('myFirstDirApp',[]);
+             myApp.directive('dataGrid',dataGridFn);
+             function dataGridFn(){
+               var directive={
+                    priority: 0,
+                    template: <span>'</span><span><</span><span>div></span><span><</span><span>div></span><span>'</span>,
+                    <span style="color: grey;">// or</span>
+                    templateUrl:'template/dataGrid.html',
+                    restrict: 'A',
+                    scope: false,
+                    controller:dataGridCtrl,
+                    controllerAs:dataGridCtrl,
+                    replace:false,
+                    require:'otherDirective'
+                    compile:compileFunction
+                }
+               return directive;
+
+               function compileFunction(elements,attrs){
+                    function linkFn(ele,attr){
+                     }
+                return linkFn;
+              }
+             }
+          </p>
+        </pre>
+        Almost I have set up the code to create a custom directive. <br>
+        Each line explanation:-<br>
+        <b>1.</b>This line of code creates an angular module with the name <b>'myFirstDirApp'</b>.You always need an angular
+        module to register a directive.<br>
+        <b>2.</b>This line register our custom directive with <b>'myFirstDirApp'</b> and I have given the name <b>'dataGrid'</b>
+        To register a directive with any angular js module, we use directive (myApp.directive) api provided by angular.I have define the
+        function in a separate line and have given name <bb>dataGridFn</bb>.<br>
+        <b>3.</b>Inside dataGridFn, I have defined the directive definition object which contains the different part of a
+        directive.<br>
+        <b>4.</b>I have defined one object directive (you can name it as per your wish) and added some properties and methods.<br>
+
+      </section>
+    </div>
+  </div>
+</div>
