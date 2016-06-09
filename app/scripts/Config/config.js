@@ -41,6 +41,9 @@
         templateUrl: 'views/Tournament/nray-mateshwar.html',
         controller: 'TournamentController'
       })
+      .when('/nrayFoundation',{
+        templateUrl:'views/NrayFoundation/nrayFoundation.html'
+      })
   }
 
 })();

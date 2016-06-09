@@ -1,135 +1,143 @@
 ﻿<!doctype html>
 <html class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
 
-    <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/main.css">
 
-    <!-- endbuild -->
-  </head>
-  <body ng-app="nRayTechnologyApp">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+  <!-- endbuild -->
+</head>
+<body ng-app="nRayTechnologyApp">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
 
-    <!-- Add your site or application content here -->
-      <div class="container" ng-controller="IndexCtrl">
-          <header class="row" id="header">
-              <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                  <img src="Images/logo.png" />
-                  <h4>N Ray Technology </h4>
-                  <small>Focus On Customer Centric Solution</small>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <digi-watch></digi-watch>
-              </div>
-          </header>
-          <div class='row'>
-               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <nav class="navbar navbar-inverse headerNav" id="main-navigation">
-                      <div class="container-fluid">
-                          <div class="navbar-header">
-                              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                                  <span class="icon-bar"></span>
-                                  <span class="icon-bar"></span>
-                                  <span class="icon-bar"></span>
-                              </button>
-                          </div>
-                          <div class="collapse navbar-collapse" id="myNavbar">
-                              <ul class="nav navbar-nav custom-tab">
-
-                                  <li><a href="#/AboutUs">About Us</a></li>
-                                  <li><a href="#/ContactUs">Contact Us</a></li>
-                                  <li><a href="#/Service">Services</a></li>
-                                  <li><a href="#/MyBolg">My Blog</a></li>
-                              </ul>
-                              <!-- <ul class="nav navbar-nav navbar-right">
-                                 <li><a href="" ng-mouseover="showLogout()">{{loggedInUser}}</a></li>
-                                 <li><a href="#/SignUp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                                 <li><a href="#/Login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                             </ul>-->
-                          </div>
-                      </div>
-                  </nav>
-              </div>
+<!-- Add your site or application content here -->
+<div class="container" ng-controller="IndexCtrl">
+  <header class="row" id="header">
+    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+      <img src="Images/logo.png"/>
+      <h4>N Ray Technology </h4>
+      <small>Focus On Customer Centric Solution</small>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <digi-watch></digi-watch>
+    </div>
+  </header>
+  <div class='row'>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <nav class="navbar navbar-inverse headerNav" id="main-navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
           </div>
-          <div ng-view class="row"></div>
-          <div class="row service-marketing">
-              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 service-marketing-layout">
-                  <h4>Website Development</h4>
-                  <p>
-                      NRT has expertise who can work with you to understand your time to time needs and get back to you with effective web development.We capture all your thoughts...
-                  </p>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 service-marketing-layout">
-                  <h4>Web Designing</h4>
-                 <p>
-                  We give you the hedge over your competitor for success by creating simple but not easy website.NRT design Your Website by mixing software tool with Hardware human mind ...
-                 </p>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 service-marketing-layout">
-                  <h4>Software Development</h4>
-                 <p> We work closely with the clients to understand their business objectives, define their software requirements, write specifications by involving our experienced business analyst.....
-                 </p>
-              </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav custom-tab">
+
+              <li><a href="#/AboutUs">About Us</a></li>
+              <li><a href="#/ContactUs">Contact Us</a></li>
+              <li><a href="#/Service">Services</a></li>
+              <li><a href="#/MyBolg">My Blog</a></li>
+              <li><a href="#/nrayFoundation">Nandu Ray Foundation</a></li>
+            </ul>
+            <!-- <ul class="nav navbar-nav navbar-right">
+               <li><a href="" ng-mouseover="showLogout()">{{loggedInUser}}</a></li>
+               <li><a href="#/SignUp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+               <li><a href="#/Login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+           </ul>-->
           </div>
-          <footer class="" id="footer">
-              <div class='row'>
-                   <div class='col-lg-4'>
-                       <h4>&copy N Ray Technology Pvt. Ltd</h4>
-                        <small style="font-size: larger; font-style: italic;">Designed & Developed by Prem Prakash</small>
-                   </div>
-                   <div class='col-lg-6'></div>
-                   <div class='col-lg-2'>
-                       <a href="https://www.facebook.com/NRTChapra/"><img src="Images/likeusonfb.png" style="width: 138px;border-radius: 46px;"/></a>
-                  </div>
-              </div>
-
-
-          </footer>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div ng-view class="row"></div>
+  <div class="row service-marketing">
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 service-marketing-layout">
+      <h4>Website Development</h4>
+      <p>
+        NRT has expertise who can work with you to understand your time to time needs and get back to you with effective
+        web development.We capture all your thoughts...
+      </p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 service-marketing-layout">
+      <h4>Web Designing</h4>
+      <p>
+        We give you the hedge over your competitor for success by creating simple but not easy website.NRT design Your
+        Website by mixing software tool with Hardware human mind ...
+      </p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 service-marketing-layout">
+      <h4>Software Development</h4>
+      <p> We work closely with the clients to understand their business objectives, define their software requirements,
+        write specifications by involving our experienced business analyst.....
+      </p>
+    </div>
+  </div>
+  <footer class="" id="footer">
+    <div class='row'>
+      <div class='col-lg-4'>
+        <h4>&copy N Ray Technology Pvt. Ltd</h4>
+        <small style="font-size: larger; font-style: italic;">Designed & Developed by Prem Prakash</small>
       </div>
+      <div class='col-lg-6'></div>
+      <div class='col-lg-2'>
+        <a href="https://www.facebook.com/NRTChapra/"><img src="Images/likeusonfb.png"
+                                                           style="width: 138px;border-radius: 46px;"/></a>
+      </div>
+    </div>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
+  </footer>
+</div>
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
-    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+<script>
+  !function (A, n, g, u, l, a, r) {
+    A.GoogleAnalyticsObject = l, A[l] = A[l] || function () {
+        (A[l].q = A[l].q || []).push(arguments)
+      }, A[l].l = +new Date, a = n.createElement(g),
+      r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+  }(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/Config/config.js"></script>
-        <script src="scripts/digitalWatch/digitalWatch.directive.js"></script>
-        <script src="scripts/Tournament/nray-mateshwar.controller.js"></script>
-        <script src="scripts/ContactUs/contactUs.controller.js"></script>
-        <!-- endbuild -->
+  ga('create', 'UA-XXXXX-X');
+  ga('send', 'pageview');
+</script>
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/Config/config.js"></script>
+<script src="scripts/digitalWatch/digitalWatch.directive.js"></script>
+<script src="scripts/Tournament/nray-mateshwar.controller.js"></script>
+<script src="scripts/ContactUs/contactUs.controller.js"></script>
+<!-- endbuild -->
 </body>
 </html>
