@@ -1,0 +1,27 @@
+body {
+background-image: url("Images/bgcimages1.jpg");
+background-repeat: no-repeat;
+background-size:cover;
+}
+
+
+.main-navigation{
+    background-color: #d6d5d2;
+    border-color:#d6d5d2;
+}
+
+.main-navigation img{
+    width:116px;
+}
+
+.error-message{
+	    color: #d80b0b;
+    top: 5px;
+    font-style: oblique;
+    font-weight: bold;
+    position: relative;
+}
+
+.form-error{
+    border: 1px solid red;
+}
